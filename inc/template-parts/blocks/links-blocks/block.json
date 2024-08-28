@@ -1,0 +1,22 @@
+{
+  "name": "links-blocks",
+  "title": "Links Blocks",
+  "description": "Links as blocks with title and description",
+  "category": "content",
+  "icon": "share-alt2",
+  "apiVersion": 2,
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "links-blocks.php",
+    "postTypes": ["page"]
+  },
+  "supports": {
+    "mode": false,
+    "align": false
+  },
+  "example": {
+    "attributes": {
+      "mode": "preview"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "selected-clients",
+  "title": "Selected Clients",
+  "description": "Block to display selected clients",
+  "category": "content",
+  "icon": "tagcloud",
+  "apiVersion": 2,
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "selected-clients.php",
+    "postTypes": ["page"]
+  },
+  "supports": {
+    "mode": false,
+    "align": false
+  },
+  "example": {
+    "attributes": {
+      "mode": "preview"
+    }
+  }
+}

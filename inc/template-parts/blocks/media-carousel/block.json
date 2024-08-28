@@ -1,0 +1,22 @@
+{
+  "name": "media-carousel",
+  "title": "Media Carousel",
+  "description": "Block with media carousel",
+  "category": "content",
+  "icon": "slides",
+  "apiVersion": 2,
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "media-carousel.php",
+    "postTypes": ["project"]
+  },
+  "supports": {
+    "mode": false,
+    "align": false
+  },
+  "example": {
+    "attributes": {
+      "mode": "preview"
+    }
+  }
+}

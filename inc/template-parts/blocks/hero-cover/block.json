@@ -1,0 +1,23 @@
+{
+  "name": "hero-cover",
+  "title": "Hero Cover",
+  "description": "Custom Hero Cover Block",
+  "category": "content",
+  "icon": "cover-image",
+  "apiVersion": 2,
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "hero-cover.php",
+    "postTypes": ["page"]
+  },
+  "supports": {
+    "mode": false,
+    "align": false,
+    "multiple": false
+  },
+  "example": {
+    "attributes": {
+      "mode": "preview"
+    }
+  }
+}

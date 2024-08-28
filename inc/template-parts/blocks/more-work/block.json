@@ -1,0 +1,21 @@
+{
+  "name": "more-work",
+  "title": "More Work",
+  "description": "Insert more work content",
+  "category": "content",
+  "icon": "insert",
+  "apiVersion": 2,
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "more-work.php"
+  },
+  "supports": {
+    "align": false,
+    "jsx": true
+  },
+  "example": {
+    "attributes": {
+      "mode": "preview"
+    }
+  }
+}

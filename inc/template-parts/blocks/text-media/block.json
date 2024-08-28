@@ -1,0 +1,22 @@
+{
+  "name": "text-media",
+  "title": "Text + Media",
+  "description": "Block with text and media",
+  "category": "content",
+  "icon": "align-right",
+  "apiVersion": 2,
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "text-media.php",
+    "postTypes": ["page"]
+  },
+  "supports": {
+    "mode": false,
+    "align": false
+  },
+  "example": {
+    "attributes": {
+      "mode": "preview"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "vertical-carousel",
+  "title": "Vertical Carousel",
+  "description": "Block with vertical carousel",
+  "category": "content",
+  "icon": "media-text",
+  "apiVersion": 2,
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "vertical-carousel.php",
+    "postTypes": ["page"]
+  },
+  "supports": {
+    "mode": false,
+    "align": false
+  },
+  "example": {
+    "attributes": {
+      "mode": "preview"
+    }
+  }
+}

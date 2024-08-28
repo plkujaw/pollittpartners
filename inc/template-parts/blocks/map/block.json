@@ -1,0 +1,22 @@
+{
+  "name": "map",
+  "title": "Map",
+  "description": "Block to insert Google Maps map",
+  "category": "content",
+  "icon": "location-alt",
+  "apiVersion": 2,
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "map.php",
+    "postTypes": ["page"]
+  },
+  "supports": {
+    "mode": false,
+    "align": false
+  },
+  "example": {
+    "attributes": {
+      "mode": "preview"
+    }
+  }
+}

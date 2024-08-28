@@ -1,0 +1,22 @@
+{
+  "name": "services-list",
+  "title": "Services List",
+  "description": "Block with list of services",
+  "category": "content",
+  "icon": "tagcloud",
+  "apiVersion": 2,
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "services-list.php",
+    "postTypes": ["page"]
+  },
+  "supports": {
+    "mode": false,
+    "align": false
+  },
+  "example": {
+    "attributes": {
+      "mode": "preview"
+    }
+  }
+}

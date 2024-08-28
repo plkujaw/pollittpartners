@@ -1,0 +1,22 @@
+{
+  "name": "accordion",
+  "title": "Accordion",
+  "description": "Accordion Block",
+  "category": "content",
+  "icon": "list-view",
+  "apiVersion": 2,
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "accordion.php",
+    "postTypes": ["page"]
+  },
+  "supports": {
+    "mode": false,
+    "align": false
+  },
+  "example": {
+    "attributes": {
+      "mode": "preview"
+    }
+  }
+}

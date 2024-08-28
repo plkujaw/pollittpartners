@@ -1,0 +1,22 @@
+{
+  "name": "two-col-text",
+  "title": "Two Column Text",
+  "description": "Two Columns with Text",
+  "category": "content",
+  "icon": "media-document",
+  "apiVersion": 2,
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "two-col-text.php",
+    "postTypes": ["page"]
+  },
+  "supports": {
+    "mode": false,
+    "align": false
+  },
+  "example": {
+    "attributes": {
+      "mode": "preview"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "media",
+  "title": "Media",
+  "description": "Block with image or video",
+  "category": "content",
+  "icon": "media-interactive",
+  "apiVersion": 2,
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "media.php",
+    "postTypes": ["project", "post", "page"]
+  },
+  "supports": {
+    "mode": false,
+    "align": false
+  },
+  "example": {
+    "attributes": {
+      "mode": "preview"
+    }
+  }
+}

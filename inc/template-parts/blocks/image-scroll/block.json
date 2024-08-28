@@ -1,0 +1,22 @@
+{
+  "name": "image-scroll",
+  "title": "Image Scroll",
+  "description": "Block with scrollable image",
+  "category": "content",
+  "icon": "image-flip-vertical",
+  "apiVersion": 2,
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "image-scroll.php",
+    "postTypes": ["project", "post"]
+  },
+  "supports": {
+    "mode": false,
+    "align": false
+  },
+  "example": {
+    "attributes": {
+      "mode": "preview"
+    }
+  }
+}

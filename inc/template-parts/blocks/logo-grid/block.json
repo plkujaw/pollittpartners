@@ -1,0 +1,22 @@
+{
+  "name": "logo-grid",
+  "title": "Logo Grid",
+  "description": "Logo grid with description",
+  "category": "content",
+  "icon": "images-alt",
+  "apiVersion": 2,
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "logo-grid.php",
+    "postTypes": ["page"]
+  },
+  "supports": {
+    "mode": false,
+    "align": false
+  },
+  "example": {
+    "attributes": {
+      "mode": "preview"
+    }
+  }
+}

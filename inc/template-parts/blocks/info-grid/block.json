@@ -1,0 +1,22 @@
+{
+  "name": "info-grid",
+  "title": "Info Grid",
+  "description": "Grid with text items",
+  "category": "content",
+  "icon": "grid-view",
+  "apiVersion": 2,
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "info-grid.php",
+    "postTypes": ["page"]
+  },
+  "supports": {
+    "mode": false,
+    "align": false
+  },
+  "example": {
+    "attributes": {
+      "mode": "preview"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "additional-info",
+  "title": "Additional Info",
+  "description": "Block with project's additional info",
+  "category": "content",
+  "icon": "info-outline",
+  "apiVersion": 2,
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "additional-info.php",
+    "postTypes": ["project"]
+  },
+  "supports": {
+    "mode": false,
+    "align": false
+  },
+  "example": {
+    "attributes": {
+      "mode": "preview"
+    }
+  }
+}

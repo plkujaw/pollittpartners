@@ -1,0 +1,22 @@
+{
+  "name": "text-cta",
+  "title": "Text + CTA",
+  "description": "Block with text and CTA",
+  "category": "content",
+  "icon": "media-document",
+  "apiVersion": 2,
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "text-cta.php",
+    "postTypes": ["page"]
+  },
+  "supports": {
+    "mode": false,
+    "align": false
+  },
+  "example": {
+    "attributes": {
+      "mode": "preview"
+    }
+  }
+}

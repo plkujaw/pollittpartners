@@ -1,0 +1,22 @@
+{
+  "name": "people-carousel",
+  "title": "People Carousel",
+  "description": "Block with people/team members carousel",
+  "category": "content",
+  "icon": "slides",
+  "apiVersion": 2,
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "people-carousel.php",
+    "postTypes": ["page"]
+  },
+  "supports": {
+    "mode": false,
+    "align": false
+  },
+  "example": {
+    "attributes": {
+      "mode": "preview"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "copy",
+  "title": "Copy",
+  "description": "Block with copy",
+  "category": "content",
+  "icon": "media-text",
+  "apiVersion": 2,
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "copy.php",
+    "postTypes": ["page", "project", "post", "job"]
+  },
+  "supports": {
+    "mode": false,
+    "align": false
+  },
+  "example": {
+    "attributes": {
+      "mode": "preview"
+    }
+  }
+}

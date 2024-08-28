@@ -1,0 +1,23 @@
+{
+  "name": "project-intro",
+  "title": "Project Intro",
+  "description": "Project Intro",
+  "category": "content",
+  "icon": "cover-image",
+  "apiVersion": 2,
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "project-intro.php",
+    "postTypes": ["project"]
+  },
+  "supports": {
+    "mode": false,
+    "align": false,
+    "multiple": false
+  },
+  "example": {
+    "attributes": {
+      "mode": "preview"
+    }
+  }
+}

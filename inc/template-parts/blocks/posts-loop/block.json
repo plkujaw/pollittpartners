@@ -1,0 +1,22 @@
+{
+  "name": "posts-loop",
+  "title": "Posts Loop",
+  "description": "Block with loop of posts",
+  "category": "content",
+  "icon": "grid-view",
+  "apiVersion": 2,
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "posts-loop.php",
+    "postTypes": ["page"]
+  },
+  "supports": {
+    "mode": false,
+    "align": false
+  },
+  "example": {
+    "attributes": {
+      "mode": "preview"
+    }
+  }
+}

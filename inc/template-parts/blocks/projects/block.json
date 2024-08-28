@@ -1,0 +1,22 @@
+{
+  "name": "projects",
+  "title": "Projects",
+  "description": "Block to select projects",
+  "category": "content",
+  "icon": "portfolio",
+  "apiVersion": 2,
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "projects.php",
+    "postTypes": ["page"]
+  },
+  "supports": {
+    "mode": false,
+    "align": false
+  },
+  "example": {
+    "attributes": {
+      "mode": "preview"
+    }
+  }
+}
