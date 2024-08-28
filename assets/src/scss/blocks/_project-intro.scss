@@ -1,0 +1,85 @@
+.project-intro {
+  // padding-bottom: 60px;
+  &__main {
+    padding-bottom: 35px;
+    .intro-text {
+      font-weight: 300;
+      padding-top: 25px;
+      & > p {
+        padding-bottom: 35px;
+      }
+    }
+
+    .intro-meta {
+      font-size: 1.0625rem;
+      padding-top: 0.2em;
+      ul {
+        font-weight: 400;
+      }
+    }
+  }
+
+  &__more {
+    .more-text,
+    .more-additional-info {
+      padding-top: 35px;
+    }
+
+    .additional-text-caption {
+      font-weight: normal !important;
+    }
+    
+    .more-additional-info {
+      ul {
+        padding-top: 40px;
+        li {
+          display: flex;
+          flex-direction: column;
+          &:not(:last-of-type) {
+            padding-bottom: 2em;
+          }
+        }
+      }
+    }
+  }
+
+  @include for-size($tablet-portrait-up) {
+    // padding-bottom: 110px;
+    &__main {
+      padding-bottom: 5px;
+      // .intro-title,
+      .intro-text > p {
+        max-width: 680px;
+      }
+      .intro-text {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 43px;
+        & > p {
+          padding-right: 5%;
+        }
+      }
+      .intro-meta {
+        flex-shrink: 0;
+        padding: 0 3%;
+      }
+    }
+
+    &__more {
+      .more-inner {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .more-text {
+        padding-top: 65px;
+        max-width: 680px;
+        padding-right: 10%;
+      }
+      .more-additional-info {
+        padding-top: 100px;
+        padding-left: 10%;
+      }
+    }
+  }
+}

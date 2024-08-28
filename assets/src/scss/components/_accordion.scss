@@ -1,0 +1,7 @@
+.accordion {
+  &__panel {
+    max-height: 0;
+    overflow: hidden;
+    transition: $transition-default;
+  }
+}

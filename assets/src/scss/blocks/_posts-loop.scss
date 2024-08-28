@@ -1,0 +1,20 @@
+.posts-loop {
+  // padding: 50px 0;
+  &__title {
+    padding-bottom: 23px;
+  }
+  // .post-list__wrapper {
+  //   row-gap: 90px;
+  // }
+
+  @include for-size($tablet-portrait-up) {
+    &__title {
+      padding-bottom: 47px;
+    }
+  }
+  &__cta {
+    a {
+      margin: 0 auto;
+    }
+  }
+}

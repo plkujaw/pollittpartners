@@ -1,0 +1,64 @@
+.people-carousel {
+  .container {
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+
+  &__top {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 35px;
+  }
+
+  .swiper-container {
+    overflow: hidden;
+  }
+
+  .swiper-navigation {
+    align-items: center;
+    display: flex;
+    gap: 17px;
+
+    button {
+      width: 32px;
+      transition: $transition-default;
+      &.swiper-button-prev {
+        svg {
+          transform: rotate(180deg);
+        }
+        &:not(.swiper-button-disabled) {
+          &:hover {
+            transform: translateX(-7px);
+          }
+        }
+      }
+      &.swiper-button-next {
+        &:not(.swiper-button-disabled) {
+          &:hover {
+            transform: translateX(7px);
+          }
+        }
+      }
+    }
+  }
+  .swiper-slide {
+    h3 {
+      padding: 8px 0 1px;
+    }
+  }
+  @include for-size($tablet-portrait-up) {
+    .swiper-navigation {
+      gap: 25px;
+      button {
+        width: 50px;
+      }
+    }
+    .swiper-slide {
+      h3 {
+        padding: 16px 0 2px;
+      }
+    }
+  }
+}

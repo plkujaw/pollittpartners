@@ -1,0 +1,36 @@
+.header {
+  // background: $clr-white;
+  color: $clr-white;
+  font-weight: bold;
+  height: $header-height;
+  left: 0;
+  mix-blend-mode: exclusion;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+
+  &__row {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    position: relative;
+  }
+
+  &__menu {
+    display: none;
+    @include for-size($tablet-portrait-up) {
+      display: initial;
+      position: absolute;
+      // margin-left: auto;
+      width: 100%;
+    }
+  }
+
+  &__logo {
+    font-size: 2.75rem;
+    position: relative;
+    z-index: 9;
+  }
+}

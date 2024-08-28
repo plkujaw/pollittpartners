@@ -1,0 +1,15 @@
+.two-col-text {
+  &__col {
+    &:nth-child(2) {
+      padding: 20px 0 0 0;
+    }
+  }
+
+  @include for-size($tablet-portrait-up) {
+    &__col {
+      &:nth-child(2) {
+        padding: 0 0 0 15%;
+      }
+    }
+  }
+}

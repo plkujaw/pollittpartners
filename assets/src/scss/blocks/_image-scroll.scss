@@ -1,0 +1,9 @@
+.image-scroll {
+  padding: 5%;
+  &__inner {
+    height: 90vh;
+    overflow-y: scroll;
+    overscroll-behavior: auto;
+    width: 100%;
+  }
+}

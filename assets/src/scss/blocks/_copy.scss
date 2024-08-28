@@ -1,0 +1,44 @@
+.copy {
+  // padding: 57px 0;
+  // &.bg-white {
+  //   background-color: $clr-white;
+  //   color: $clr-black;
+  // }
+
+  // &.bg-black {
+  // background-color: $clr-black;
+  // color: $clr-white;
+  // a {
+  //   @extend .link-underline;
+  // }
+  // }
+
+  .wysiwyg {
+    &.align-right {
+      padding-left: 10%;
+    }
+  }
+  &.width-reduced {
+    margin: 0 auto;
+    max-width: 1000px;
+  }
+
+  @include for-size($tablet-portrait-up) {
+    // padding: 71px 0;
+    .wysiwyg {
+      &:not(.align-none) {
+        max-width: 700px;
+      }
+      &.align-right {
+        margin-left: auto;
+        padding-left: 0;
+        padding-right: 10%;
+      }
+      &.align-centre {
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+

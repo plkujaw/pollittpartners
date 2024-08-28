@@ -1,0 +1,88 @@
+.selected-clients {
+  color: $clr-black;
+  svg path {
+    fill: $clr-black;
+  }
+  &__title {
+    padding-bottom: 42px;
+  }
+  &__control {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    .btn {
+      color: $clr-black;
+
+      &.active {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__list-by-client,
+  &__list-by-project {
+    display: none;
+    gap: 35px;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto;
+    max-width: 1000px;
+    opacity: 0;
+    transition: $transition-default;
+    &.active {
+      display: grid;
+      opacity: 1;
+    }
+  }
+
+  .projects-list-wrapper {
+    padding: 0 8%;
+    ul {
+      line-height: 23px;
+    }
+  }
+
+  .divider {
+    margin: 40px 0 90px;
+  }
+
+  .client-logo {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    svg {
+      overflow: visible;
+    }
+  }
+  
+  @include for-size(480px) {
+    &__list-by-client {
+      grid-template-columns: repeat(3, 1fr);
+      justify-items: center;
+    }
+  }
+
+  @include for-size($tablet-portrait-up) {
+    &__list-by-client {
+      grid-template-columns: repeat(4, 1fr);
+      // justify-items: center;
+    }
+  }
+
+  @include for-size($tablet-landscape-up) {
+    &__title {
+      padding-bottom: 53px;
+    }
+    // &__list-by-client {
+    //   grid-template-columns: repeat(4, 1fr);
+    //   justify-items: center;
+    // }
+
+    &__list-by-project {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .divider {
+      margin: 36px 0 54px;
+    }
+  }
+}

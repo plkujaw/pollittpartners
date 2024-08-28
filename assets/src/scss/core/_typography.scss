@@ -1,0 +1,167 @@
+body {
+  font-family: $brand-font-1;
+  // font-size: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: normal;
+  letter-spacing: -0.01em;
+  line-height: 1.3;
+  text-rendering: optimizeLegibility; // aestheticallyloyal.com/public/optimize-legibility/
+  -webkit-text-size-adjust: 100%; // Prevents iOS orientation font resize bug
+}
+
+.font-size-xlarge {
+  // font-size: clamp(2.625rem, 1.7447rem + 3.7559vw, 5.125rem);
+  font-size: clamp(2.625rem, 1.8988rem + 3.0986vw, 4.6875rem);
+  letter-spacing: -0.03em;
+  @include for-size($tablet-portrait-up) {
+    letter-spacing: -0.04em;
+  }
+  &--thin {
+    font-weight: 300;
+  }
+}
+
+.font-size-large {
+  font-size: clamp(2.25rem, 2.0299rem + 0.939vw, 2.875rem);
+}
+
+.font-size-logotype {
+  font-size: clamp(2.15rem, 1.6746rem + 2.0282vw, 3.5rem);
+}
+
+.font-size-regular {
+  // font-size: clamp(1rem, 0.978rem + 0.0939vw, 1.0625rem);
+  font-size: 1rem;
+  // line-height: 140%;
+  @include for-size($tablet-portrait-up) {
+    font-size: 0.9375rem;
+  }
+
+  @include for-size($tablet-landscape-up) {
+    font-size: 1.0625rem;
+  }
+
+  &--thin {
+    font-weight: 300;
+  }
+}
+
+.font-size-h2 {
+  // font-size: clamp(2.25rem, 2.096rem + 0.6573vw, 2.6875rem);
+  font-size: 2.25rem;
+  font-weight: 400;
+  letter-spacing: -0.025em;
+
+  @include for-size($tablet-portrait-up) {
+    font-size: 2.3125rem;
+    letter-spacing: -0.02em;
+  }
+
+  @include for-size($tablet-landscape-up) {
+    font-size: 2.6875rem;
+  }
+
+  &--thin {
+    font-weight: 300;
+  }
+}
+
+.font-size-h3 {
+  // font-size: clamp(1.625rem, 1.603rem + 0.0939vw, 1.6875rem);
+  font-size: 1.625rem;
+
+  @include for-size($tablet-portrait-up) {
+    font-size: 1.4375rem;
+  }
+
+  @include for-size($tablet-landscape-up) {
+    font-size: 1.6875rem;
+  }
+
+  &--thin {
+    font-weight: 300;
+  }
+}
+
+.font-size-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  @include for-size-minmax($tablet-portrait-up, $tablet-landscape-up) {
+    font-size: 1.125rem;
+  }
+}
+
+.font-size-small {
+  * {
+    font-size: 0.875rem;
+  }
+}
+
+body {
+  @extend .font-size-regular;
+}
+
+strong,
+b {
+  font-weight: bold !important;
+}
+
+em {
+  font-style: italic;
+}
+
+h1 {
+  @extend .font-size-xlarge;
+  font-weight: bold;
+}
+
+h2 {
+  @extend .font-size-h2;
+}
+
+h3 {
+  @extend .font-size-h3;
+}
+
+.wysiwyg {
+  a {
+    @extend .link-underline;
+    @extend .link-underline--black;
+    // font-weight: 700;
+  }
+
+  p {
+    // @extend .font-size-regular;
+    &:not(:last-child) {
+      padding-bottom: 1em;
+    }
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    padding-bottom: 0.5em;
+  }
+
+  h3 {
+    font-weight: 300;
+  }
+
+  h4 {
+    // font-size: 1.25rem !important;
+    // letter-spacing: -0.03em;
+    @extend .font-size-title;
+  }
+}
+
+.font-weight-thin * {
+  font-weight: 300 !important;
+}
+.font-weight-normal * {
+  font-weight: 400 !important;
+}

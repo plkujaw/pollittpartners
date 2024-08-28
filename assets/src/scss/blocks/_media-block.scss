@@ -1,0 +1,26 @@
+.media {
+  // padding: 16px 0;
+
+  // &__col {
+  // padding: 8px 0;
+  // }
+
+  @include for-size($tablet-portrait-up) {
+    // padding: 40px 0;
+
+    &__col {
+      padding: 0;
+      &.offset-right {
+        padding-right: 15%;
+      }
+      &.offset-left {
+        padding-left: 15%;
+      }
+      &.center {
+        margin: 0 auto;
+        max-width: 900px;
+        padding: 0 3%;
+      }
+    }
+  }
+}

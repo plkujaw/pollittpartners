@@ -1,0 +1,24 @@
+.text-cta {
+  background-color: $clr-black;
+  color: $clr-white;
+  &__text {
+    // padding: 76px 0 67px;
+    p {
+      padding: 1em 0 1em 0;
+    }
+    a {
+      svg path {
+        fill: $clr-white;
+        stroke: $clr-white;
+      }
+    }
+  }
+
+  @include for-size($tablet-portrait-up) {
+    &__text {
+      // padding: 0 9% 0 0;
+      // width: 50%;
+      max-width: 700px;
+    }
+  }
+}

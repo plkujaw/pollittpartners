@@ -1,0 +1,36 @@
+// .with-cover-leave,
+// .with-cover-enter,
+// .with-cover-leave-active .transition,
+// .with-cover-enter-active .transition {
+//   transition: transform 1.5s ease;
+// }
+// .with-cover-leave .transition {
+//   transform: translateY(-100%);
+// }
+// .with-cover-leave-to .transition,
+// .with-cover-enter .transition {
+//   transform: translateY(0);
+// }
+// .with-cover-enter-to .transition {
+//   transform: translateY(-100%);
+// }
+
+.transition-cover {
+  align-items: center;
+  background-color: $clr-black;
+  color: $clr-white;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  left: 0;
+  position: fixed;
+  top: 0;
+  transform: translateY(-100%);
+  transition: transform 1.2s ease;
+  width: 100%;
+  z-index: 666;
+
+  &.active {
+    transform: translateY(0);
+  }
+}

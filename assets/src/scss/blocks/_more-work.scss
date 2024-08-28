@@ -1,0 +1,20 @@
+.more-work {
+  .acf-innerblocks-container {
+    section,
+    .vertical-spacer {
+      display: none;
+    }
+  }
+  .more-work__load {
+    display: none;
+  }
+
+  &.active {
+    .acf-innerblocks-container {
+      section,
+      .vertical-spacer {
+        display: block;
+      }
+    }
+  }
+}

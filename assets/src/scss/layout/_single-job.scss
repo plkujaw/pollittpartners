@@ -1,0 +1,33 @@
+.single-job {
+  .post-foot {
+    padding-top: 50px;
+    &__inner {
+      margin: 0 auto;
+      max-width: calc(680px - 6%);
+    }
+    &__apply {
+      margin-bottom: 50px;
+      .btn {
+        background: $clr-black;
+        border-radius: 27px;
+        font-size: 1.1875rem;
+        padding: 10px 20px;
+      }
+    }
+    &__back {
+      margin: 0 !important;
+      max-width: none !important;
+    }
+    @include for-size($tablet-portrait-up) {
+      &__inner {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+      }
+      &__apply {
+        flex-shrink: 0;
+        margin-bottom: 0;
+      }
+    }
+  }
+}

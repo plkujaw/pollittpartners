@@ -1,0 +1,28 @@
+.projects {
+  .post-card {
+    padding-bottom: 0;
+  }
+  .media__inner {
+    &.col-1 {
+      .post-card__text-wrap {
+        @extend .container;
+      }
+    }
+    &:not(.col-1) {
+      .post-card__image,
+      .post-card__video {
+        margin: 0 -5%;
+      }
+    }
+  }
+  @include for-size($tablet-portrait-up) {
+    .media__inner {
+      &:not(.col-1) {
+        .post-card__image,
+        .post-card__video {
+          margin: 0;
+        }
+      }
+    }
+  }
+}

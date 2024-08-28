@@ -1,0 +1,33 @@
+.services-list {
+  background-color: $clr-black !important;
+  color: $clr-white !important;
+  padding: 50px 0;
+
+  &__text {
+    padding-top: 1em;
+  }
+
+  &__services {
+    font-size: clamp(2.25rem, 1.2377rem + 4.3192vw, 5.125rem);
+    font-weight: 300;
+    padding-top: 56px;
+    ul {
+      li {
+        &:not(:last-of-type) {
+          &::after {
+            content: '/';
+            padding: 0 0.1em;
+          }
+        }
+        &:not(:first-of-type) {
+          text-transform: lowercase;
+        }
+      }
+      @include for-size($tablet-portrait-up) {
+        display: flex;
+        flex-wrap: wrap;
+        letter-spacing: -0.05em;
+      }
+    }
+  }
+}

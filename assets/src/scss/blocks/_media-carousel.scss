@@ -1,0 +1,46 @@
+.media-carousel {
+  // padding: 28px 0;
+  .swiper-wrapper {
+    align-items: center;
+  }
+  .swiper-container {
+    margin: 0 auto;
+    max-width: 900px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .swiper-pagination {
+    align-items: center;
+    color: $clr-white;
+    display: flex;
+    margin: 0 auto;
+    max-width: 900px;
+    padding-top: 15px;
+  }
+}
+
+body:not(.is-mobile) {
+  .media-carousel {
+    .swiper-navigation {
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      button {
+        height: 100%;
+        position: absolute;
+        top: 0;
+        width: 50%;
+        z-index: 1;
+      }
+      .swiper-button-prev {
+        left: 0;
+      }
+      .swiper-button-next {
+        right: 0;
+      }
+    }
+  }
+}

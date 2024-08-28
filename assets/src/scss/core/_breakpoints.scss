@@ -1,0 +1,16 @@
+$phone-only: 599px;
+$tablet-portrait-up: 768px;
+$tablet-landscape-up: 1280px;
+
+
+@mixin for-size($size) {
+  @media screen and (min-width: $size) {
+    @content;
+  }
+}
+
+@mixin for-size-minmax($min, $max) {
+  @media screen and (min-width: $min) and (max-width: $max) {
+    @content;
+  }
+}

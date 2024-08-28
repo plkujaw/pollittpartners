@@ -1,0 +1,35 @@
+img,
+svg {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+  user-drag: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+img,
+video {
+  height: auto;
+  width: 100%;
+}
+
+picture {
+  display: block;
+}
+
+// img {
+// -webkit-backface-visibility: hidden;
+// image-rendering: -moz-crisp-edges; /* Firefox */
+// image-rendering: -o-crisp-edges; /* Opera */
+// image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming) */
+// image-rendering: crisp-edges;
+// -ms-interpolation-mode: nearest-neighbor; /* IE (non-standard property) */
+// -ms-transform: translateZ(0); /* IE 9 */
+// -webkit-transform: translateZ(0); /* Chrome, Safari, Opera */
+// transform: translateZ(0);
+// }
+

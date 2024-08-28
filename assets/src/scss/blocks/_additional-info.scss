@@ -1,0 +1,19 @@
+.additional-info {
+  // padding: 50px 0;
+  &__title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    padding-bottom: 16px;
+    text-align: center;
+  }
+
+  &__item {
+    padding: 16px 0;
+  }
+
+  @include for-size($tablet-portrait-up) {
+    &__items {
+      justify-items: center;
+    }
+  }
+}

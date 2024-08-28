@@ -1,0 +1,41 @@
+.accordion-block {
+  &__wrapper {
+    border-top: 1px solid $clr-grey-dark;
+  }
+
+  &__title {
+    padding: 32px 0 24px;
+    width: fit-content;
+  }
+
+  &__panel {
+    margin: 33px 0 11px;
+
+    article {
+      padding-bottom: 30px;
+      img {
+        width: auto;
+      }
+      .wp-video {
+        width: 100% !important;
+      }
+    }
+  }
+  
+  &__btn {
+    color: $clr-black;
+  }
+
+  @include for-size($tablet-portrait-up) {
+    &__panel {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      article {
+        &:first-of-type {
+          max-width: calc(480px + 10%);
+          padding-right: 10%;
+        }
+      }
+    }
+  }
+}

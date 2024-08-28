@@ -1,0 +1,40 @@
+.logo-grid {
+  // padding: 70px 0;
+  &__title {
+    padding-bottom: 70px;
+  }
+
+  &__logos {
+    // align-items: center;
+    column-gap: 5%;
+    display: grid;
+    grid-template-columns: repeat(2, fit-content(150px));
+    justify-content: space-between;
+    row-gap: 10vh;
+  }
+  // .logo-wrapper {
+  // align-items: center;
+  // display: grid;
+  // }
+  &__logo {
+    min-height: 200px;
+    align-items: center;
+    display: flex;
+  }
+  // &__caption {
+  // height: fit-content;
+  // padding-top: 20px;
+  // }
+
+  @include for-size($tablet-portrait-up) {
+    &__logos {
+      grid-template-columns: repeat(4, fit-content(150px));
+    }
+  }
+
+  @include for-size($tablet-landscape-up) {
+    &__logos {
+      grid-template-columns: repeat(6, fit-content(150px));
+    }
+  }
+}

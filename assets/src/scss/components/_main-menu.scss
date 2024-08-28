@@ -1,0 +1,40 @@
+.main-menu {
+  .menu-item {
+    font-size: 1.8125rem;
+    font-weight: bold;
+    line-height: 61px;
+  }
+  .current-menu-item.active {
+    text-decoration: underline;
+    text-underline-offset: 0.1em;
+  }
+
+  @include for-size($tablet-portrait-up) {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    .menu-item {
+      font-size: 1.1875rem;
+      letter-spacing: -0.005em;
+      line-height: 23px;
+      margin-right: 3.5vw;
+      &:last-child {
+        background: $clr-white;
+        border-radius: 27px;
+        color: $clr-black;
+        // font-size: 0.938rem;
+        margin-right: 0;
+        padding: 8px 13px;
+        position: absolute;
+        right: 0;
+        &.current-menu-item.active {
+          text-decoration: none;
+        }
+      }
+      &:nth-last-child(2) {
+        margin-right: 0;
+      }
+    }
+  }
+}

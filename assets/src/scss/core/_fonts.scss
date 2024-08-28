@@ -1,0 +1,62 @@
+$fontsDir: '../../fonts/';
+@font-face {
+  font-family: 'Akkurat Pro';
+  src: url('#{$fontsDir}AkkuratPro-Light.woff2') format('woff2'),
+    url('#{$fontsDir}AkkuratPro-Light.woff') format('woff'),
+    url('#{$fontsDir}AkkuratPro-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Akkurat Pro';
+  src: url('#{$fontsDir}AkkuratPro-LightItalic.woff2') format('woff2'),
+    url('#{$fontsDir}AkkuratPro-LightItalic.woff') format('woff'),
+    url('#{$fontsDir}AkkuratPro-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Akkurat Pro';
+  src: url('#{$fontsDir}AkkuratPro-Regular.woff2') format('woff2'),
+    url('#{$fontsDir}AkkuratPro-Regular.woff') format('woff'),
+    url('#{$fontsDir}AkkuratPro-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Akkurat Pro';
+  src: url('#{$fontsDir}AkkuratPro-Bold.woff2') format('woff2'),
+    url('#{$fontsDir}AkkuratPro-Bold.woff') format('woff'),
+    url('#{$fontsDir}AkkuratPro-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Akkurat Pro';
+  src: url('#{$fontsDir}AkkuratPro-Italic.woff2') format('woff2'),
+    url('#{$fontsDir}AkkuratPro-Italic.woff') format('woff'),
+    url('#{$fontsDir}AkkuratPro-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Akkurat Pro';
+  src: url('#{$fontsDir}AkkuratPro-BoldItalic.woff2') format('woff2'),
+    url('#{$fontsDir}AkkuratPro-BoldItalic.woff') format('woff'),
+    url('#{$fontsDir}AkkuratPro-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+$brand-font-1: 'Akkurat Pro', sans-serif;
