@@ -1,0 +1,129 @@
+{
+    "key": "group_6419ceaf4d675",
+    "title": "Block: Vertical Spacer",
+    "fields": [
+        {
+            "key": "field_6419ceafc957b",
+            "label": "Block: Vertical Spacer",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_6419d05443029",
+            "label": "Height Mobile (px)",
+            "name": "vertical_spacer_size_mobile",
+            "aria-label": "",
+            "type": "range",
+            "instructions": "Screen size < 768px",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 100,
+            "min": 0,
+            "max": 200,
+            "step": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_6422c1d66f47a",
+            "label": "Height Tablet (px)",
+            "name": "vertical_spacer_size_tablet",
+            "aria-label": "",
+            "type": "range",
+            "instructions": "768px <= Screen size < 1279px",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 100,
+            "min": 0,
+            "max": 200,
+            "step": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_6419ced1ac3dd",
+            "label": "Height Desktop (px)",
+            "name": "vertical_spacer_size_desktop",
+            "aria-label": "",
+            "type": "range",
+            "instructions": "Screen size >= 1280px",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 100,
+            "min": 0,
+            "max": 200,
+            "step": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_6419dcb6e07df",
+            "label": "Background Colour",
+            "name": "vertical_spacer_background_colour",
+            "aria-label": "",
+            "type": "button_group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "white": "White",
+                "black": "Black"
+            },
+            "default_value": "white",
+            "return_format": "value",
+            "allow_null": 0,
+            "layout": "horizontal"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/vertical-spacer"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1680094685
+}
