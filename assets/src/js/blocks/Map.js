@@ -3,7 +3,7 @@ import { Loader } from '@googlemaps/js-api-loader';
 class Map {
   constructor() {
     this.loader = new Loader({
-      apiKey: 'AIzaSyDQLlXSYt4RQQE7hncL2R5aUlyUS0LjgHU',
+      apiKey: '',
       version: 'weekly',
     });
     this.events();
